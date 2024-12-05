@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
+    <title>AI quote Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>AI Quote Generator</h1>
+      </header>
+      <main>
+        <div class="form-container">
+        <form id="quote-generator-form">
+          <input
+            type="text"
+            placeholder="Enter quote topic or phrase here..."
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+            id="user-instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="hint">i.e: love, endurance, renewal or life</div>
+        <div class="quote hidden" id="quote">
+        </div>
+        </div>
+      </main>
+      <footer>
+        This AI Project was coded by
+        <a href="https://github.com/NomzamoM11" target="_blank"
+          >Nomzamo Mbelebele</a
+        >
+        and is
+        <a
+          href="https://github.com/NomzamoM11/my-ai-poem-generator"
+          target="_blank"
+          >open-sourced on GitHub</a
+        >
+        , and
+        <a href="https://ai-poem-generator-site.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
